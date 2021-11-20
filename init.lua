@@ -5,6 +5,10 @@ local path = minetest.get_modpath("colored_concrete")
 
 dofile(path .. "/register.lua") -- Register Items
 dofile(path .. "/crafting.lua") -- Craft Items
-dofile(path .. "/moreblocks.lua") --Moreblocks
 
-print("[MOD] colored concrete loaded")
+if minetest.get_modpath("moreblocks") then
+    dofile(path .. "/moreblocks.lua") --Moreblocks
+    minetest.log("[colored_concrete] moreblocks function activated")
+end
+
+print("[colored_concrete] loaded")
