@@ -1,114 +1,114 @@
---Minetest Concrete Mod v0.1.0 (c) 2021 Niklp 
---https://github.com/nikolaus-albinger/concrete
+--Minetest colored_concrete Mod v0.2.0 (c) 2021 Niklp 
+--https://github.com/nikolaus-albinger/colored_concrete
 
-minetest.register_node("concrete:white", {
+minetest.register_node("colored_concrete:white", {
     description = ("White Concrete"),
-    tiles = {"concrete_white.png"},
+    tiles = {"colored_concrete_white.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("concrete:orange", {
+minetest.register_node("colored_concrete:orange", {
     description = ("Orange Concrete"),
-    tiles = {"concrete_orange.png"},
+    tiles = {"colored_concrete_orange.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("concrete:magenta", {
+minetest.register_node("colored_concrete:magenta", {
     description = ("Magenta Concrete"),
-    tiles = {"concrete_magenta.png"},
+    tiles = {"colored_concrete_magenta.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("concrete:lightblue", {
+minetest.register_node("colored_concrete:lightblue", {
     description = ("Lightblue Concrete"),
-    tiles = {"concrete_lightblue.png"},
+    tiles = {"colored_concrete_lightblue.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("concrete:yellow", {
+minetest.register_node("colored_concrete:yellow", {
     description = ("Yellow Concrete"),
-    tiles = {"concrete_yellow.png"},
+    tiles = {"colored_concrete_yellow.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("concrete:lightgreen", {
+minetest.register_node("colored_concrete:lightgreen", {
     description = ("Lightgreen Concrete"),
-    tiles = {"concrete_lightgreen.png"},
+    tiles = {"colored_concrete_lightgreen.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("concrete:pink", {
+minetest.register_node("colored_concrete:pink", {
     description = ("Pink Concrete"),
-    tiles = {"concrete_pink.png"},
+    tiles = {"colored_concrete_pink.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("concrete:darkgray", {
+minetest.register_node("colored_concrete:darkgray", {
     description = ("Darkgray Concrete"),
-    tiles = {"concrete_darkgray.png"},
+    tiles = {"colored_concrete_darkgray.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("concrete:gray", {
+minetest.register_node("colored_concrete:gray", {
     description = ("Gray Concrete"),
-    tiles = {"concrete_gray.png"},
+    tiles = {"colored_concrete_gray.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("concrete:turquoise", {
+minetest.register_node("colored_concrete:turquoise", {
     description = ("Turquoise Concrete"),
-    tiles = {"concrete_turquoise.png"},
+    tiles = {"colored_concrete_turquoise.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("concrete:violet", {
+minetest.register_node("colored_concrete:violet", {
     description = ("Violet Concrete"),
-    tiles = {"concrete_violet.png"},
+    tiles = {"colored_concrete_violet.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("concrete:blue", {
+minetest.register_node("colored_concrete:blue", {
     description = ("Blue Concrete"),
-    tiles = {"concrete_blue.png"},
+    tiles = {"colored_concrete_blue.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("concrete:brown", {
+minetest.register_node("colored_concrete:brown", {
     description = ("Brown Concrete"),
-    tiles = {"concrete_brown.png"},
+    tiles = {"colored_concrete_brown.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("concrete:green", {
+minetest.register_node("colored_concrete:green", {
     description = ("Green Concrete"),
-    tiles = {"concrete_green.png"},
+    tiles = {"colored_concrete_green.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("concrete:red", {
+minetest.register_node("colored_concrete:red", {
     description = ("Red Concrete"),
-    tiles = {"concrete_red.png"},
+    tiles = {"colored_concrete_red.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("concrete:black", {
+minetest.register_node("colored_concrete:black", {
     description = ("Black Concrete"),
-    tiles = {"concrete_black.png"},
+    tiles = {"colored_concrete_black.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })

@@ -1,114 +1,114 @@
---Minetest Concrete Mod v0.1.0 (c) 2021 Niklp 
---https://github.com/nikolaus-albinger/concrete
+--Minetest colored_concrete Mod v0.2.0 (c) 2021 Niklp 
+--https://github.com/nikolaus-albinger/colored_concrete
 
-stairsplus:register_all("moreblocks", "concrete:white", "concrete:white", {
+stairsplus:register_all("moreblocks", "colored_concrete:white", "colored_concrete:white", {
     description = "White Concrete",
-    tiles = {"concrete_white.png"},
+    tiles = {"colored_concrete_white.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-stairsplus:register_all("moreblocks", "concrete:orange", "concrete:orange", {
+stairsplus:register_all("moreblocks", "colored_concrete:orange", "colored_concrete:orange", {
     description = "Orange Concrete",
-    tiles = {"concrete_orange.png"},
+    tiles = {"colored_concrete_orange.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-stairsplus:register_all("moreblocks", "concrete:magenta", "concrete:magenta", {
+stairsplus:register_all("moreblocks", "colored_concrete:magenta", "colored_concrete:magenta", {
     description = "Magenta Concrete",
-    tiles = {"concrete_magenta.png"},
+    tiles = {"colored_concrete_magenta.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-stairsplus:register_all("moreblocks", "concrete:lightblue", "concrete:lightblue", {
+stairsplus:register_all("moreblocks", "colored_concrete:lightblue", "colored_concrete:lightblue", {
     description = "Lightblue Concrete",
-    tiles = {"concrete_lightblue.png"},
+    tiles = {"colored_concrete_lightblue.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-stairsplus:register_all("moreblocks", "concrete:yellow", "concrete:yellow", {
+stairsplus:register_all("moreblocks", "colored_concrete:yellow", "colored_concrete:yellow", {
     description = "Yellow Concrete",
-    tiles = {"concrete_yellow.png"},
+    tiles = {"colored_concrete_yellow.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-stairsplus:register_all("moreblocks", "concrete:lightgreen", "concrete:lightgreen", {
+stairsplus:register_all("moreblocks", "colored_concrete:lightgreen", "colored_concrete:lightgreen", {
     description = "Lightgreen Concrete",
-    tiles = {"concrete_lightgreen.png"},
+    tiles = {"colored_concrete_lightgreen.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-stairsplus:register_all("moreblocks", "concrete:pink", "concrete:pink", {
+stairsplus:register_all("moreblocks", "colored_concrete:pink", "colored_concrete:pink", {
     description = "Pink Concrete",
-    tiles = {"concrete_pink.png"},
+    tiles = {"colored_concrete_pink.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-stairsplus:register_all("moreblocks", "concrete:darkgray", "concrete:darkgray", {
+stairsplus:register_all("moreblocks", "colored_concrete:darkgray", "colored_concrete:darkgray", {
     description = "Darkgray Concrete",
-    tiles = {"concrete_darkgray.png"},
+    tiles = {"colored_concrete_darkgray.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-stairsplus:register_all("moreblocks", "concrete:gray", "concrete:gray", {
+stairsplus:register_all("moreblocks", "colored_concrete:gray", "colored_concrete:gray", {
     description = "Gray Concrete",
-    tiles = {"concrete_gray.png"},
+    tiles = {"colored_concrete_gray.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-stairsplus:register_all("moreblocks", "concrete:turquoise", "concrete:turquoise", {
+stairsplus:register_all("moreblocks", "colored_concrete:turquoise", "colored_concrete:turquoise", {
     description = "Turquoise Concrete",
-    tiles = {"concrete_turquoise.png"},
+    tiles = {"colored_concrete_turquoise.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-stairsplus:register_all("moreblocks", "concrete:violet", "concrete:violet", {
+stairsplus:register_all("moreblocks", "colored_concrete:violet", "colored_concrete:violet", {
     description = "Violet Concrete",
-    tiles = {"concrete_violet.png"},
+    tiles = {"colored_concrete_violet.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-stairsplus:register_all("moreblocks", "concrete:blue", "concrete:blue", {
+stairsplus:register_all("moreblocks", "colored_concrete:blue", "colored_concrete:blue", {
     description = "Blue Concrete",
-    tiles = {"concrete_blue.png"},
+    tiles = {"colored_concrete_blue.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-stairsplus:register_all("moreblocks", "concrete:brown", "concrete:brown", {
+stairsplus:register_all("moreblocks", "colored_concrete:brown", "colored_concrete:brown", {
     description = "Brown Concrete",
-    tiles = {"concrete_brown.png"},
+    tiles = {"colored_concrete_brown.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-stairsplus:register_all("moreblocks", "concrete:green", "concrete:green", {
+stairsplus:register_all("moreblocks", "colored_concrete:green", "colored_concrete:green", {
     description = "Green Concrete",
-    tiles = {"concrete_green.png"},
+    tiles = {"colored_concrete_green.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-stairsplus:register_all("moreblocks", "concrete:red", "concrete:red", {
+stairsplus:register_all("moreblocks", "colored_concrete:red", "colored_concrete:red", {
     description = "Red Concrete",
-    tiles = {"concrete_red.png"},
+    tiles = {"colored_concrete_red.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
 
-stairsplus:register_all("moreblocks", "concrete:black", "concrete:black", {
+stairsplus:register_all("moreblocks", "colored_concrete:black", "colored_concrete:black", {
     description = "Black Concrete",
-    tiles = {"concrete_black.png"},
+    tiles = {"colored_concrete_black.png"},
     groups = {cracky = 3},
     sounds = default.node_sound_stone_defaults(),
 })
