@@ -1,4 +1,4 @@
---Minetest colored_concrete Mod v0.2.0 (c) 2021 Niklp 
+--Minetest colored_concrete Mod (c) 2021-2022 Niklp 
 --https://github.com/nikolaus-albinger/colored_concrete
 
 minetest.register_craft({

@@ -1,4 +1,4 @@
-# concrete
+# colored_concrete
  Minetest Mod for colored concrete
- (c) 2021 Niklp 
+ (c) 2021-2022 Niklp 
  https://github.com/nikolaus-albinger/colored_concrete
