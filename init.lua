@@ -1,5 +1,7 @@
 --Minetest colored_concrete Mod (c) 2021-2022 Niklp 
---https://github.com/nikolaus-albinger/colored_concrete
+--https://github.com/Niklp09/colored_concrete
+
+--TODO: Technic CNC Support
 
 local path = minetest.get_modpath("colored_concrete")
 

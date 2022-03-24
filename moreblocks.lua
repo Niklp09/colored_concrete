@@ -1,6 +1,3 @@
---Minetest colored_concrete Mod (c) 2021-2022 Niklp 
---https://github.com/nikolaus-albinger/colored_concrete
-
 stairsplus:register_all("moreblocks", "colored_concrete:white", "colored_concrete:white", {
     description = "White Concrete",
     tiles = {"colored_concrete_white.png"},

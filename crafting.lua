@@ -1,6 +1,3 @@
---Minetest colored_concrete Mod (c) 2021-2022 Niklp 
---https://github.com/nikolaus-albinger/colored_concrete
-
 minetest.register_craft({
     type = "shaped",
     output = "colored_concrete:white 8",

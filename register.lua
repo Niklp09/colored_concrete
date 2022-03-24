@@ -1,6 +1,3 @@
---Minetest colored_concrete Mod (c) 2021-2022  Niklp 
---https://github.com/nikolaus-albinger/colored_concrete
-
 local S = minetest.get_translator(minetest.get_current_modname())
 
 minetest.register_node("colored_concrete:white", {
