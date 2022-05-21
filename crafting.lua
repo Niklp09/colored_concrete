@@ -30,30 +30,10 @@ minetest.register_craft({
 
 minetest.register_craft({
     type = "shaped",
-    output = "colored_concrete:lightblue 8",
-    recipe = {
-        {"default:gravel", "default:sand", "default:gravel"},
-        {"default:sand", "dye:light_blue", "default:sand"},
-        {"default:gravel", "default:sand", "default:gravel"}
-    }
-})
-
-minetest.register_craft({
-    type = "shaped",
     output = "colored_concrete:yellow 8",
     recipe = {
         {"default:gravel", "default:sand", "default:gravel"},
         {"default:sand", "dye:yellow", "default:sand"},
-        {"default:gravel", "default:sand", "default:gravel"}
-    }
-})
-
-minetest.register_craft({
-    type = "shaped",
-    output = "colored_concrete:lightgreen 8",
-    recipe = {
-        {"default:gravel", "default:sand", "default:gravel"},
-        {"default:sand", "dye:light_green", "default:sand"},
         {"default:gravel", "default:sand", "default:gravel"}
     }
 })
@@ -84,16 +64,6 @@ minetest.register_craft({
     recipe = {
         {"default:gravel", "default:sand", "default:gravel"},
         {"default:sand", "dye:grey", "default:sand"},
-        {"default:gravel", "default:sand", "default:gravel"}
-    }
-})
-
-minetest.register_craft({
-    type = "shaped",
-    output = "colored_concrete:turquoise 8",
-    recipe = {
-        {"default:gravel", "default:sand", "default:gravel"},
-        {"default:sand", "dye:medium_cyan", "default:sand"},
         {"default:gravel", "default:sand", "default:gravel"}
     }
 })
@@ -156,4 +126,36 @@ minetest.register_craft({
         {"default:sand", "dye:black", "default:sand"},
         {"default:gravel", "default:sand", "default:gravel"}
     }
-})    
+})  
+
+if minetest.get_modpath("unifieddyes") then
+    minetest.register_craft({
+        type = "shaped",
+        output = "colored_concrete:turquoise 8",
+        recipe = {
+            {"default:gravel", "default:sand", "default:gravel"},
+            {"default:sand", "dye:medium_cyan", "default:sand"},
+            {"default:gravel", "default:sand", "default:gravel"}
+        }
+    })
+
+    minetest.register_craft({
+        type = "shaped",
+        output = "colored_concrete:lightgreen 8",
+        recipe = {
+            {"default:gravel", "default:sand", "default:gravel"},
+            {"default:sand", "dye:light_green", "default:sand"},
+            {"default:gravel", "default:sand", "default:gravel"}
+        }
+    })
+
+    minetest.register_craft({
+        type = "shaped",
+        output = "colored_concrete:lightblue 8",
+        recipe = {
+            {"default:gravel", "default:sand", "default:gravel"},
+            {"default:sand", "dye:light_blue", "default:sand"},
+            {"default:gravel", "default:sand", "default:gravel"}
+        }
+    })
+end
