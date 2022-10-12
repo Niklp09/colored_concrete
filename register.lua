@@ -1,113 +1,83 @@
 local S = minetest.get_translator(minetest.get_current_modname())
+local moreblocks = minetest.get_modpath("moreblocks")
 
-minetest.register_node("colored_concrete:white", {
-    description = S("White Concrete"),
-    tiles = {"colored_concrete_white.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
+local concrete = {
+	{"white", "White"},
+    {"orange", "Orange"},
+    {"magenta", "Magenta"},
+    {"lightblue", "Lightblue"},
+    {"yellow", "Yellow"},
+    {"lightgreen", "Lightgreen"},
+    {"pink", "Pink"},
+    {"dark_grey", "Darkgrey"},
+    {"grey", "Grey"},
+    {"turquoise", "Turquoise"},
+    {"violet", "Voilet"},
+    {"blue", "Blue"},
+    {"brown", "Brown"},
+    {"green", "Green"},
+    {"red", "Red"},
+    {"black", "Black"}
+}
 
-minetest.register_node("colored_concrete:orange", {
-    description = S("Orange Concrete"),
-    tiles = {"colored_concrete_orange.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
+for _, concrete in pairs(concrete) do
 
-minetest.register_node("colored_concrete:magenta", {
-    description = S("Magenta Concrete"),
-    tiles = {"colored_concrete_magenta.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
+	minetest.register_node("colored_concrete:" .. concrete[1], {
+		description = S(concrete[2] .. " concrete"),
+		tiles = {"colored_concrete_" .. concrete[1] ..".png"},
+		groups = {cracky = 3},
+		sounds = default.node_sound_stone_defaults()
+	})
 
-minetest.register_node("colored_concrete:lightblue", {
-    description = S("Lightblue Concrete"),
-    tiles = {"colored_concrete_lightblue.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
+    local dye_string = "dye:" .. concrete[1]
+    if minetest.registered_items[dye_string] then
+        minetest.register_craft({
+            output = "colored_concrete:" .. concrete[1] .. " 8",
+            recipe = {
+                {"default:gravel", "default:sand", "default:gravel"},
+                {"default:sand", "dye:" .. concrete[1], "default:sand"},
+                {"default:gravel", "default:sand", "default:gravel"}
+         }
+        })
+    else
+        minetest.log("warning", "[colored_concrete]: Not registering craft for 'colored_concrete:" .. concrete[1] .. "_concrete' because 'dye:" .. concrete[1] .. "' is not a registered item!")
+    end
 
-minetest.register_node("colored_concrete:yellow", {
-    description = S("Yellow Concrete"),
-    tiles = {"colored_concrete_yellow.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
+	if moreblocks then
+        stairsplus:register_all("moreblocks", "colored_concrete:" .. concrete[1], "colored_concrete:" .. concrete[1], {
+            description = S(concrete[2] .. " Concrete"),
+            tiles = {"colored_concrete_" .. concrete[1] .. ".png"},
+            groups = {cracky = 3},
+            sounds = default.node_sound_stone_defaults(),
+        })
+	end
+end
 
-minetest.register_node("colored_concrete:lightgreen", {
-    description = S("Lightgreen Concrete"),
-    tiles = {"colored_concrete_lightgreen.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
+if minetest.get_modpath("unifieddyes") then
+    minetest.register_craft({
+        output = "colored_concrete:turquoise 8",
+        recipe = {
+            {"default:gravel", "default:sand", "default:gravel"},
+            {"default:sand", "dye:medium_cyan", "default:sand"},
+            {"default:gravel", "default:sand", "default:gravel"}
+        }
+    })
 
-minetest.register_node("colored_concrete:pink", {
-    description = S("Pink Concrete"),
-    tiles = {"colored_concrete_pink.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
+    minetest.register_craft({
+        output = "colored_concrete:lightgreen 8",
+        recipe = {
+            {"default:gravel", "default:sand", "default:gravel"},
+            {"default:sand", "dye:light_green", "default:sand"},
+            {"default:gravel", "default:sand", "default:gravel"}
+        }
+    })
 
-minetest.register_node("colored_concrete:darkgray", {
-    description = S("Darkgray Concrete"),
-    tiles = {"colored_concrete_darkgray.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("colored_concrete:gray", {
-    description = S("Gray Concrete"),
-    tiles = {"colored_concrete_gray.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("colored_concrete:turquoise", {
-    description = S("Turquoise Concrete"),
-    tiles = {"colored_concrete_turquoise.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("colored_concrete:violet", {
-    description = S("Violet Concrete"),
-    tiles = {"colored_concrete_violet.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("colored_concrete:blue", {
-    description = S("Blue Concrete"),
-    tiles = {"colored_concrete_blue.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("colored_concrete:brown", {
-    description = S("Brown Concrete"),
-    tiles = {"colored_concrete_brown.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("colored_concrete:green", {
-    description = S("Green Concrete"),
-    tiles = {"colored_concrete_green.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("colored_concrete:red", {
-    description = S("Red Concrete"),
-    tiles = {"colored_concrete_red.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("colored_concrete:black", {
-    description = S("Black Concrete"),
-    tiles = {"colored_concrete_black.png"},
-    groups = {cracky = 3},
-    sounds = default.node_sound_stone_defaults(),
-})
+    minetest.register_craft({
+        output = "colored_concrete:lightblue 8",
+        recipe = {
+            {"default:gravel", "default:sand", "default:gravel"},
+            {"default:sand", "dye:light_blue", "default:sand"},
+            {"default:gravel", "default:sand", "default:gravel"}
+        }
+    })
+end
