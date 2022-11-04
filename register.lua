@@ -2,7 +2,7 @@ local S = minetest.get_translator(minetest.get_current_modname())
 local moreblocks = minetest.get_modpath("moreblocks")
 
 local concrete = {
-	{"white", "White"},
+    {"white", "White"},
     {"orange", "Orange"},
     {"magenta", "Magenta"},
     {"lightblue", "Lightblue"},
@@ -12,7 +12,7 @@ local concrete = {
     {"dark_grey", "Darkgrey"},
     {"grey", "Grey"},
     {"turquoise", "Turquoise"},
-    {"violet", "Voilet"},
+    {"violet", "Violet"},
     {"blue", "Blue"},
     {"brown", "Brown"},
     {"green", "Green"},
@@ -24,7 +24,7 @@ for _, concrete in pairs(concrete) do
 
 	minetest.register_node("colored_concrete:" .. concrete[1], {
 		description = S(concrete[2] .. " Concrete"),
-		tiles = {"colored_concrete_" .. concrete[1] ..".png"},
+		tiles = {"colored_concrete_" .. concrete[1] .. ".png"},
 		groups = {cracky = 3},
 		sounds = default.node_sound_stone_defaults()
 	})
@@ -37,7 +37,7 @@ for _, concrete in pairs(concrete) do
                 {"default:gravel", "default:sand", "default:gravel"},
                 {"default:sand", "dye:" .. concrete[1], "default:sand"},
                 {"default:gravel", "default:sand", "default:gravel"}
-         }
+            }
         })
     else
         minetest.log("warning", "[colored_concrete]: Not registering craft for 'colored_concrete:" .. concrete[1] .. "_concrete' because 'dye:" .. concrete[1] .. "' is not a registered item!")
