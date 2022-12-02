@@ -22,12 +22,12 @@ local concrete = {
 
 for _, concrete in pairs(concrete) do
 
-	minetest.register_node("colored_concrete:" .. concrete[1], {
-		description = S(concrete[2] .. " Concrete"),
-		tiles = {"colored_concrete_" .. concrete[1] .. ".png"},
-		groups = {cracky = 3},
-		sounds = default.node_sound_stone_defaults()
-	})
+    minetest.register_node("colored_concrete:" .. concrete[1], {
+	    description = S(concrete[2] .. " Concrete"),
+	    tiles = {"colored_concrete_" .. concrete[1] .. ".png"},
+	    groups = {cracky = 3},
+	    sounds = default.node_sound_stone_defaults()
+    })
 
     local dye_string = "dye:" .. concrete[1]
     if minetest.registered_items[dye_string] then
@@ -43,14 +43,14 @@ for _, concrete in pairs(concrete) do
         minetest.log("warning", "[colored_concrete]: Not registering craft for 'colored_concrete:" .. concrete[1] .. "_concrete' because 'dye:" .. concrete[1] .. "' is not a registered item!")
     end
 
-	if moreblocks then
+    if moreblocks then
         stairsplus:register_all("moreblocks", "colored_concrete:" .. concrete[1], "colored_concrete:" .. concrete[1], {
             description = S(concrete[2] .. " Concrete"),
             tiles = {"colored_concrete_" .. concrete[1] .. ".png"},
             groups = {cracky = 3},
             sounds = default.node_sound_stone_defaults(),
         })
-	end
+    end
 end
 
 if minetest.get_modpath("unifieddyes") then
