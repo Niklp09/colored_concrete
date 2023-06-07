@@ -5,7 +5,7 @@ local path = minetest.get_modpath("colored_concrete")
 
 dofile(path .. "/register.lua") -- Register Items
 
-if minetest.settings:get_bool("colored_concrete_enable_aliases", "true") then
+if minetest.settings:get_bool("colored_concrete_enable_aliases", true) then
     minetest.register_alias("colored_concrete:darkgray", "colored_concrete:dark_grey")
     minetest.register_alias("colored_concrete:gray", "colored_concrete:grey")
 
