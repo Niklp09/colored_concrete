@@ -44,12 +44,15 @@ for _, concrete in pairs(concrete) do
     end
 
     if moreblocks then
-        stairsplus:register_all("moreblocks", "colored_concrete:" .. concrete[1], "colored_concrete:" .. concrete[1], {
+        stairsplus:register_all("moreblocks", "colored_concrete_" .. concrete[1], "colored_concrete:" .. concrete[1], {
             description = S(concrete[2] .. " Concrete"),
             tiles = {"colored_concrete_" .. concrete[1] .. ".png"},
             groups = {cracky = 3},
             sounds = default.node_sound_stone_defaults(),
         })
+        if minetest.settings:get_bool("colored_concrete_enable_aliases", "true") then
+            stairsplus:register_alias_all("moreblocks", "colored_concrete:" .. concrete[1], "moreblocks", "colored_concrete_" .. concrete[1])
+        end
     end
 end
 
