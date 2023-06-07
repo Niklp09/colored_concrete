@@ -23,10 +23,10 @@ local concrete = {
 for _, concrete in pairs(concrete) do
 
     minetest.register_node("colored_concrete:" .. concrete[1], {
-      description = S(concrete[2] .. " Concrete"),
-      tiles = {"colored_concrete_" .. concrete[1] .. ".png"},
-      groups = {cracky = 3},
-      sounds = default.node_sound_stone_defaults()
+        description = S(concrete[2] .. " Concrete"),
+        tiles = {"colored_concrete_" .. concrete[1] .. ".png"},
+        groups = {cracky = 3},
+        sounds = default.node_sound_stone_defaults()
     })
 
     local dye_string = "dye:" .. concrete[1]
